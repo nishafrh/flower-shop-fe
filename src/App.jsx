@@ -1,11 +1,15 @@
-import { CssBaseline, StyledEngineProvider } from '@mui/material'
+import { createTheme, CssBaseline, StyledEngineProvider, ThemeProvider } from '@mui/material'
 import AppRoutes from './routes'
+
+const theme = createTheme()
 
 function App() {
 	return (
 		<StyledEngineProvider injectFirst>
 			<CssBaseline />
-			<AppRoutes />
+			<ThemeProvider theme={theme}>
+				<AppRoutes />
+			</ThemeProvider>
 		</StyledEngineProvider>
 	)
 }
