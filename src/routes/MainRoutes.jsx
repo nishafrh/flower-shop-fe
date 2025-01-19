@@ -10,6 +10,10 @@ const MainRoutes = {
 	element: <MainLayout />,
 	children: [
 		{
+			path: '/',
+			element: <HomePage />
+		},
+		{
 			path: '/home',
 			element: <HomePage />
 		}
