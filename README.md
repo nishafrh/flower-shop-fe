@@ -1,7 +1,3 @@
-# Demo
-
-[https://flower-shop-fe.netlify.app/]
-
 # Instalasi
 
 1. Unduh Node JS (minimal v16.20.0)
@@ -25,14 +21,10 @@
 - Material UI (MUI)
 - Tabler Icons
 
-### 3. **Platform Hosting**
-
-- Netlify
-
 ### 3. **Version Control**
 
 - Git (GitHub)
 
-### 3. **Build Tool**
+### 4. **Build Tool**
 
 - Vite
