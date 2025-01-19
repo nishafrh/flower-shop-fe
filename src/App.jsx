@@ -1,23 +1,11 @@
-import { useSelector } from 'react-redux'
-import { CssBaseline, StyledEngineProvider, ThemeProvider } from '@mui/material'
-import { Routes } from 'react-router-dom'
+import { CssBaseline, StyledEngineProvider } from '@mui/material'
+import AppRoutes from './routes'
 
-const App = () => {
-	const customization = useSelector(state => state.customization)
-
+function App() {
 	return (
 		<StyledEngineProvider injectFirst>
-			<ThemeProvider theme={themes(customization)}>
-				<CssBaseline />
-				<Locales>
-					<NavigationScroll>
-						<>
-							<Routes />
-							<Snackbar />
-						</>
-					</NavigationScroll>
-				</Locales>
-			</ThemeProvider>
+			<CssBaseline />
+			<AppRoutes />
 		</StyledEngineProvider>
 	)
 }
