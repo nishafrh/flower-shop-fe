@@ -1,6 +1,6 @@
-# Demo Admin
+# Demo
 
-[https://flowercode-shop-fe.netlify.app/]
+[https://flower-shop-fe.netlify.app/]
 
 # Instalasi
 
