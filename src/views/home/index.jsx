@@ -1,8 +1,10 @@
 import { Grid } from '@mui/material'
+
 import MainSection from './mainSection'
 import AboutUsSection from './aboutUs'
 import WhyChooseUsSection from './whyChooseUs'
 import ContactUsSection from './contacUs'
+import ServiceSection from './serviceSection'
 
 function HomePage() {
 	return (
@@ -11,6 +13,7 @@ function HomePage() {
 			<AboutUsSection />
 			<WhyChooseUsSection />
 			<ContactUsSection />
+			<ServiceSection />
 		</Grid>
 	)
 }
