@@ -23,7 +23,7 @@ const AboutUsSection = () => (
 			xs={12}
 			lg={6}
 			gap={7}
-			sx={{ borderLeft: { md: 'none', lg: '1px solid #121212' }, p: '80px' }}>
+			sx={{ borderLeft: { xs: 'none', lg: '1px solid #121212' }, p: '80px' }}>
 			<Grid item xs={12}>
 				<Stack direction='column' spacing={3}>
 					<Typography
