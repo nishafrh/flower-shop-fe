@@ -25,13 +25,22 @@ const WhyChooseUsSection = () => {
 
 	return (
 		<Grid container item xs={12} sx={{ border: '1px solid #121212', borderTop: 'none' }}>
-			<Grid item xs={6} sx={{ p: '80px' }}>
+			<Grid
+				item
+				xs={12}
+				lg={6}
+				sx={{ p: '80px', borderBottom: { lg: 'none', xs: '1px solid #121212' } }}>
 				<Typography sx={{ fontWeight: 600, fontSize: '50px', lineHeight: '60px' }}>
 					Why choose us?
 				</Typography>
 			</Grid>
 
-			<Grid container item xs={6} sx={{ borderLeft: '1px solid #121212' }}>
+			<Grid
+				container
+				item
+				xs={12}
+				lg={6}
+				sx={{ borderLeft: { xs: 'none', lg: '1px solid #121212' } }}>
 				{reasons.map((item, index) => (
 					<Grid
 						item
