@@ -5,12 +5,16 @@ import Header from './Header'
 
 const Main = styled('main', { shouldForwardProp: prop => prop !== 'open' })(() => ({
 	marginTop: '83px',
-	height: 'calc(100vh - 83px)'
+	height: 'calc(100vh - 83px)',
+	width: '100%'
 }))
 
 const MainLayout = () => {
 	return (
-		<Box sx={{ display: 'flex' }}>
+		<Box
+			sx={{
+				display: 'flex'
+			}}>
 			<CssBaseline />
 			<AppBar enableColorOnDark position='fixed' color='inherit' elevation={0}>
 				<Header />
