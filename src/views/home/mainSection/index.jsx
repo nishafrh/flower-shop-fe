@@ -9,7 +9,7 @@ import candels from '../../../assets/mainSection/candels.png'
 import fresheners from '../../../assets/mainSection/fresheners.png'
 
 const MainSection = () => (
-	<Grid container item xs={12} sx={{ border: '1px solid #121212' }}>
+	<Grid container item xs={12} sx={{ border: '1px solid #121212', width: '100%' }}>
 		<TitleGrid />
 		<FlowersGrid
 			flowers={[

@@ -2,7 +2,7 @@ import { Grid, Typography } from '@mui/material'
 import { IconArrowNarrowLeft, IconArrowNarrowRight } from '@tabler/icons'
 
 const FlowersGrid = ({ flowers }) => (
-	<Grid container item xs={6} sx={{ borderLeft: '1px solid #121212' }}>
+	<Grid container item md={12} lg={6} sx={{ borderLeft: '1px solid #121212' }}>
 		{flowers.map((item, index) => (
 			<Grid container item xs={12} key={index}>
 				<Grid

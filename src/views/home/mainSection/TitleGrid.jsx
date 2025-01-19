@@ -2,7 +2,13 @@ import { Grid, Typography } from '@mui/material'
 import image1 from '../../../assets/mainSection/image-1.svg'
 
 const TitleGrid = () => (
-	<Grid container item xs={6} gap={3} sx={{ borderBottom: '1px solid #121212', p: '80px' }}>
+	<Grid
+		container
+		item
+		md={12}
+		lg={6}
+		gap={3}
+		sx={{ borderBottom: '1px solid #121212', p: '80px' }}>
 		<Grid item xs={12} sx={{ borderBottom: '1px solid #121212' }}>
 			<Typography sx={{ fontWeight: 600, fontSize: '67px', lineHeight: '80.4px' }}>
 				Kyiv LuxeBouquets
