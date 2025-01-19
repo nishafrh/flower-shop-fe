@@ -2,13 +2,28 @@ import { Button, Grid, Stack, Typography } from '@mui/material'
 
 const AboutUsSection = () => (
 	<Grid container item xs={12} sx={{ border: '1px solid #121212', borderTop: 'none' }}>
-		<Grid item xs={6} sx={{ p: '80px' }}>
-			<Typography sx={{ fontWeight: 600, fontSize: '50px', lineHeight: '60px' }}>
+		<Grid
+			item
+			xs={12}
+			lg={6}
+			sx={{ p: '80px', borderBottom: { lg: 'none', xs: '1px solid #121212' } }}>
+			<Typography
+				sx={{
+					fontWeight: 600,
+					fontSize: '50px',
+					lineHeight: '60px'
+				}}>
 				About us
 			</Typography>
 		</Grid>
 
-		<Grid container item xs={6} gap={7} sx={{ borderLeft: '1px solid #121212', p: '80px' }}>
+		<Grid
+			container
+			item
+			xs={12}
+			lg={6}
+			gap={7}
+			sx={{ borderLeft: { md: 'none', lg: '1px solid #121212' }, p: '80px' }}>
 			<Grid item xs={12}>
 				<Stack direction='column' spacing={3}>
 					<Typography
