@@ -4,9 +4,6 @@ import { Outlet } from 'react-router-dom'
 import Header from './Header'
 
 const Main = styled('main', { shouldForwardProp: prop => prop !== 'open' })(() => ({
-	marginLeft: 0,
-	marginRight: 0,
-	borderRadius: 0,
 	marginTop: '83px',
 	height: 'calc(100vh - 83px)'
 }))
