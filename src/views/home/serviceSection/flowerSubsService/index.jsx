@@ -1,6 +1,7 @@
-import { Button, Grid, Stack, Typography } from '@mui/material'
+import { Grid, Stack, Typography } from '@mui/material'
 
 import flowerSubscription from '../../../../assets/serviceSection/flower-subs.png'
+import Button1 from '../../../../ui-component/button/Button1'
 
 const FlowerSubscriptionsService = () => (
 	<Grid container item xs={12} sx={{ border: '1px solid #121212', borderTop: 'none' }}>
@@ -57,18 +58,7 @@ const FlowerSubscriptionsService = () => (
 					alignItems: 'center',
 					justifyContent: 'center'
 				}}>
-				<Button
-					variant='outlined'
-					sx={{
-						borderRadius: 0,
-						border: '1px solid #121212',
-						color: '#121212',
-						paddingX: '24px',
-						paddingTop: '16px',
-						paddingBottom: '14px'
-					}}>
-					SUBSCRIBE NOW
-				</Button>
+				<Button1 label='SUBSCRIBE NOW' />
 			</Grid>
 		</Grid>
 	</Grid>

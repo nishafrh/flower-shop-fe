@@ -1,4 +1,5 @@
-import { Button, Grid, TextField, Typography } from '@mui/material'
+import { Grid, TextField, Typography } from '@mui/material'
+import Button1 from '../../../ui-component/button/Button1'
 
 const SubEmailSection = () => (
 	<Grid container item xs={3} gap={3} sx={{ p: '40px', borderRight: '1px solid #121212' }}>
@@ -23,21 +24,19 @@ const SubEmailSection = () => (
 				/>
 			</Grid>
 			<Grid item xs={12}>
-				<Button
+				<Button1
 					variant='contained'
+					label='REMIND'
 					sx={{
 						backgroundColor: '#121212',
 						'&:hover': {
 							backgroundColor: '#121212'
 						},
 						borderRadius: 0,
-						boxShadow: 'none',
-						pt: '16px',
-						pb: '14px',
-						width: '100%'
-					}}>
-					REMIND
-				</Button>
+						width: '100%',
+						color: '#fff'
+					}}
+				/>
 			</Grid>
 		</Grid>
 	</Grid>

@@ -1,7 +1,8 @@
-import { Box, Button, Grid, Stack, Typography } from '@mui/material'
+import { Box, Grid, Stack, Typography } from '@mui/material'
 
 import googleLogo from '../../../assets/google-logo.png'
 import ReviewSlider from './ReviewSlider'
+import Button1 from '../../../ui-component/button/Button1'
 
 const ReviewSection = () => (
 	<Grid
@@ -38,18 +39,7 @@ const ReviewSection = () => (
 			</Stack>
 		</Grid>
 		<Grid item xs={12} sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-			<Button
-				variant='outlined'
-				sx={{
-					borderRadius: 0,
-					border: '1px solid #121212',
-					color: '#121212',
-					paddingX: '24px',
-					paddingTop: '16px',
-					paddingBottom: '14px'
-				}}>
-				READ REVIEWS
-			</Button>
+			<Button1 label='READ REVIEWS' />
 		</Grid>
 	</Grid>
 )

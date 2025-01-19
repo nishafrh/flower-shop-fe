@@ -1,4 +1,4 @@
-import { Button, Divider, Grid, Stack, TextField, Typography } from '@mui/material'
+import { Divider, Grid, Stack, TextField, Typography } from '@mui/material'
 import {
 	IconBrandFacebook,
 	IconBrandInstagram,
@@ -10,6 +10,7 @@ import {
 } from '@tabler/icons'
 
 import store from '../../../assets/cotactUsSection/store.png'
+import Button1 from '../../../ui-component/button/Button1'
 
 export const IconsFollowUs = [
 	IconBrandInstagram,
@@ -63,21 +64,19 @@ const ContactUsSection = () => {
 								/>
 							</Grid>
 							<Grid item xs>
-								<Button
+								<Button1
 									variant='contained'
+									label='BOOK A CALL'
 									sx={{
 										backgroundColor: '#121212',
 										'&:hover': {
 											backgroundColor: '#121212'
 										},
 										borderRadius: 0,
-										boxShadow: 'none',
-										pt: '16px',
-										pb: '14px',
-										width: '100%'
-									}}>
-									BOOK A CALL
-								</Button>
+										width: '100%',
+										color: '#fff'
+									}}
+								/>
 							</Grid>
 						</Grid>
 					</Grid>

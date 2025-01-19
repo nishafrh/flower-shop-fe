@@ -1,6 +1,7 @@
-import { Button, Grid, Stack, Typography } from '@mui/material'
+import { Grid, Stack, Typography } from '@mui/material'
 
 import weddingDecor from '../../../../assets/serviceSection/wedding-decor.png'
+import Button1 from '../../../../ui-component/button/Button1'
 
 const DecorService = () => (
 	<Grid
@@ -27,24 +28,23 @@ const DecorService = () => (
 				width: '100%',
 				height: '100%',
 				alignItems: 'center',
-				backgroundColor: 'rgba(0, 0, 0, 0.5)',
-				p: '80px'
+				backgroundColor: 'rgba(0, 0, 0, 0.5)'
 			}}>
 			<Grid item xs={12}>
 				<Stack
 					direction='column'
 					spacing={3}
 					sx={{
-						width: '60%',
+						width: '50%',
 						margin: 'auto',
-						textAlign: 'center',
-						color: '#fff'
+						textAlign: 'center'
 					}}>
 					<Typography
 						sx={{
 							fontWeight: 500,
 							fontSize: '14px',
-							lineHeight: '16.8px'
+							lineHeight: '16.8px',
+							color: '#fff'
 						}}>
 						SERVICE
 					</Typography>
@@ -53,6 +53,7 @@ const DecorService = () => (
 							fontWeight: 600,
 							fontSize: '50px',
 							lineHeight: '60px',
+							color: '#fff',
 							whiteSpace: 'nowrap'
 						}}>
 						Wedding & Event Decor
@@ -61,7 +62,8 @@ const DecorService = () => (
 						sx={{
 							fontWeight: 500,
 							fontSize: '18px',
-							lineHeight: '25.2px'
+							lineHeight: '25.2px',
+							color: '#fff'
 						}}>
 						Let our team of expert florists and designers create stunning, on-trend floral
 						décor for your special day. Trust us to bring your vision to life.
@@ -76,18 +78,16 @@ const DecorService = () => (
 					alignItems: 'center',
 					justifyContent: 'center'
 				}}>
-				<Button
-					variant='outlined'
+				<Button1
+					label='SUBSCRIBE NOW'
 					sx={{
-						borderRadius: 0,
-						border: '1px solid #fff',
 						color: '#fff',
-						paddingX: '24px',
-						paddingTop: '16px',
-						paddingBottom: '14px'
-					}}>
-					SUBSCRIBE NOW
-				</Button>
+						border: '1px solid #fff',
+						'&:hover': {
+							border: '1px solid #fff'
+						}
+					}}
+				/>
 			</Grid>
 		</Grid>
 	</Grid>

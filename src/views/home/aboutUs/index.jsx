@@ -1,4 +1,5 @@
-import { Button, Grid, Stack, Typography } from '@mui/material'
+import { Grid, Stack, Typography } from '@mui/material'
+import Button1 from '../../../ui-component/button/Button1'
 
 const AboutUsSection = () => (
 	<Grid container item xs={12} sx={{ border: '1px solid #121212', borderTop: 'none' }}>
@@ -58,18 +59,7 @@ const AboutUsSection = () => (
 				</Stack>
 			</Grid>
 			<Grid item xs={12}>
-				<Button
-					variant='outlined'
-					sx={{
-						borderRadius: 0,
-						border: '1px solid #121212',
-						color: '#121212',
-						paddingX: '24px',
-						paddingTop: '16px',
-						paddingBottom: '14px'
-					}}>
-					LEARN MORE
-				</Button>
+				<Button1 label='LEARN MORE' />
 			</Grid>
 		</Grid>
 	</Grid>
