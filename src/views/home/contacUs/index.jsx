@@ -23,7 +23,14 @@ const ContactUsSection = () => {
 	const phones = ['+380980099777', '+380980099111']
 
 	return (
-		<Grid container item xs={12} sx={{ border: '1px solid #121212', borderTop: 'none' }}>
+		<Grid
+			container
+			item
+			xs={12}
+			sx={{
+				border: '1px solid #121212',
+				borderTop: 'none'
+			}}>
 			<Grid container item xs={6} id='left'>
 				<Grid
 					container
@@ -133,11 +140,15 @@ const ContactUsSection = () => {
 								))}
 							</Stack>
 						</Grid>
-						<Grid item containerxs={6} sx={{ paddingY: '48px', paddingX: '24px' }}>
+						<Grid item container xs={6} sx={{ paddingY: '48px', paddingX: '24px' }}>
 							<Stack
 								direction='column'
 								spacing={5}
-								sx={{ alignItems: 'center', display: 'flex', flexDirection: 'column' }}>
+								sx={{
+									alignItems: 'center',
+									display: 'flex',
+									flexDirection: 'column'
+								}}>
 								<Typography
 									sx={{
 										fontWeight: 500,
@@ -155,7 +166,8 @@ const ContactUsSection = () => {
 										fontSize: '16px',
 										lineHeight: '19.2px',
 										color: '#121212',
-										alignItems: 'flex-end'
+										alignItems: 'center',
+										textAlign: 'center'
 									}}>
 									<IconMapPin size='20px' stroke={2.5} />
 									15/4 Khreshchatyk Street, Kyiv
