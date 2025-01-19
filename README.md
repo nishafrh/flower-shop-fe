@@ -1,5 +1,7 @@
 # Demo Admin
 
+[https://pentacode-shop-fe.netlify.app/]
+
 # Instalasi
 
 1. Unduh Node JS (minimal v16.20.0)
