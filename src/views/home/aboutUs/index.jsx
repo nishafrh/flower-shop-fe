@@ -4,7 +4,7 @@ const AboutUsSection = () => (
 	<Grid container item xs={12} sx={{ border: '1px solid #121212', borderTop: 'none' }}>
 		<Grid item xs={6} sx={{ p: '80px' }}>
 			<Typography sx={{ fontWeight: 600, fontSize: '50px', lineHeight: '60px' }}>
-				About Us
+				About us
 			</Typography>
 		</Grid>
 
