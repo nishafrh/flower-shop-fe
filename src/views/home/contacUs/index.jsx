@@ -11,15 +11,16 @@ import {
 
 import store from '../../../assets/cotactUsSection/store.png'
 
+export const IconsFollowUs = [
+	IconBrandInstagram,
+	IconBrandPinterest,
+	IconBrandFacebook,
+	IconBrandTwitter,
+	IconBrandTelegram
+]
+
 const ContactUsSection = () => {
 	const phones = ['+380980099777', '+380980099111']
-	const icons = [
-		IconBrandInstagram,
-		IconBrandPinterest,
-		IconBrandFacebook,
-		IconBrandTwitter,
-		IconBrandTelegram
-	]
 
 	return (
 		<Grid container item xs={12} sx={{ border: '1px solid #121212', borderTop: 'none' }}>
@@ -186,7 +187,7 @@ const ContactUsSection = () => {
 					</Grid>
 					<Grid item xs={6} sx={{ paddingX: '10px', paddingY: '16px' }}>
 						<Stack direction='row' sx={{ justifyContent: 'space-evenly' }}>
-							{icons.map((Item, index) => (
+							{IconsFollowUs.map((Item, index) => (
 								<Item key={index} />
 							))}
 						</Stack>
