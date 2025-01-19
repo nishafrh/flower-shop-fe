@@ -1,6 +1,6 @@
 # Demo Admin
 
-[https://pentacode-shop-fe.netlify.app/]
+[https://flowercode-shop-fe.netlify.app/]
 
 # Instalasi
 
