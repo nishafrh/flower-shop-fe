@@ -1,4 +1,5 @@
 import { Grid, Typography } from '@mui/material'
+import { IconArrowNarrowLeft, IconArrowNarrowRight } from '@tabler/icons'
 
 const FlowersGrid = ({ flowers }) => (
 	<Grid container item xs={6} sx={{ borderLeft: '1px solid #121212' }}>
@@ -11,9 +12,24 @@ const FlowersGrid = ({ flowers }) => (
 						display: 'flex',
 						alignItems: 'center',
 						justifyContent: 'center',
-						borderRight: '1px solid #121212'
+						borderRight: '1px solid #121212',
+						position: 'relative'
 					}}>
 					<Typography sx={{ fontWeight: 500, fontSize: '38px' }}>{item.title}</Typography>
+					<Typography
+						sx={{
+							position: 'absolute',
+							bottom: '10px',
+							fontWeight: 600,
+							fontSize: '16px',
+							lineHeight: '19.2px',
+							color: '#121212',
+							display: 'flex',
+							alignItems: 'center',
+							gap: '5px'
+						}}>
+						Shop Now <IconArrowNarrowRight />
+					</Typography>
 				</Grid>
 				<Grid item xs={6}>
 					<img
@@ -53,10 +69,25 @@ const FlowersGrid = ({ flowers }) => (
 								alignItems: 'center',
 								justifyContent: 'center',
 								borderTop: '1px solid #121212',
-								borderBottom: item.key === 'has-bottom' ? '1px solid #121212' : undefined
+								borderBottom: item.key === 'has-bottom' ? '1px solid #121212' : undefined,
+								position: 'relative'
 							}}>
 							<Typography sx={{ fontWeight: 500, fontSize: '38px' }}>
 								{item.title2}
+							</Typography>
+							<Typography
+								sx={{
+									position: 'absolute',
+									bottom: '10px',
+									fontWeight: 600,
+									fontSize: '16px',
+									lineHeight: '19.2px',
+									color: '#121212',
+									display: 'flex',
+									alignItems: 'center',
+									gap: '5px'
+								}}>
+								<IconArrowNarrowLeft /> Shop Now
 							</Typography>
 						</Grid>
 					</>
