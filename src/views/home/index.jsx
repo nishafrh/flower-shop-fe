@@ -5,6 +5,7 @@ import AboutUsSection from './aboutUs'
 import WhyChooseUsSection from './whyChooseUs'
 import ContactUsSection from './contacUs'
 import ServiceSection from './serviceSection'
+import ReviewSection from './reviewSection'
 
 function HomePage() {
 	return (
@@ -14,6 +15,7 @@ function HomePage() {
 			<WhyChooseUsSection />
 			<ContactUsSection />
 			<ServiceSection />
+			<ReviewSection />
 		</Grid>
 	)
 }
